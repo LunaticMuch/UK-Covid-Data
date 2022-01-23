@@ -1,0 +1,3 @@
+[submodule "ChartView"]
+	path = ChartView
+	url = https://github.com/LunaticMuch/ChartView/pull/new/feature/v2-covid-data
