@@ -19,10 +19,10 @@ public struct DailySnapshot: Codable {
     var firstDoses: Double
     var secondDoses: Double
     var thirdDoses: Double
-    
-    private enum CodingKeys : String, CodingKey { case date, cases, deaths, firstDoses, secondDoses, thirdDoses }
 
-    public init(from decoder : Decoder) throws {
+    private enum CodingKeys: String, CodingKey { case date, cases, deaths, firstDoses, secondDoses, thirdDoses }
+
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         date = try container.decode(Date.self, forKey: .date)
         cases = try container.decode(Int.self, forKey: .cases)
@@ -32,4 +32,3 @@ public struct DailySnapshot: Codable {
         thirdDoses =  (try? container.decode(Double.self, forKey: .thirdDoses)) ?? 0.0
     }
 }
-

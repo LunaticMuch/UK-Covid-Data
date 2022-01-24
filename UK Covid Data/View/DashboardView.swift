@@ -9,14 +9,14 @@ import SwiftUI
 import SwiftUICharts
 
 struct DashboardView: View {
-    
+
     @ObservedObject var covidData = CovidData()
-    
+
     let blueStyle = ChartStyle(backgroundColor: .white,
                               foregroundColor: [ColorGradient(.purple, .blue)])
-    
+
     var body: some View {
-        ScrollView{
+        ScrollView {
                 VStack {
                     HStack {
                         Text("UK Dashboard")
@@ -26,11 +26,11 @@ struct DashboardView: View {
                             Image(systemName: "arrow.counterclockwise.circle.fill")
                                 .foregroundColor(Color.gray)
                                 .font(.system(size: 28, weight: .bold))
-                                //.background(Color("background3"))
+                                // .background(Color("background3"))
                                 .clipShape(Circle())
                                 .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
-                            
+
                         }
                     }
                     .padding()
@@ -51,16 +51,16 @@ struct DashboardView: View {
                                             .foregroundColor(Color(UIColor.secondaryLabel))
                                     }.padding()
                                 }
-                                ChartLabelName(" ",type: .legend)
+                                ChartLabelName(" ", type: .legend)
                                 BarChart()
                                 ChartLabel("Last 60 days", type: .legend, format: "%.0f")
                             }
-                            .data(covidData.last60Snapshots.map({($0.date.toString(format: "dd-MM-YYYY"),Double($0.cases))}))
+                            .data(covidData.last60Snapshots.map({($0.date.toString(format: "dd-MM-YYYY"), Double($0.cases))}))
                             .chartStyle(blueStyle)
                             .frame(height: 240)
                             .padding()
                         }
-                        
+
                         VStack {
                             CardView {
                                 HStack {
@@ -77,27 +77,25 @@ struct DashboardView: View {
                                             .foregroundColor(Color(UIColor.secondaryLabel))
                                     }.padding()
                                 }
-                                
-                                ChartLabelName(" ",type: .legend)
+
+                                ChartLabelName(" ", type: .legend)
                                 BarChart()
                                 ChartLabel("Last 60 days", type: .legend, format: "%.0f")
                             }
-                            .data(covidData.last60Snapshots.map({($0.date.toString(format: "dd-MM-YYYY"),Double($0.deaths))}))
+                            .data(covidData.last60Snapshots.map({($0.date.toString(format: "dd-MM-YYYY"), Double($0.deaths))}))
                             .chartStyle(blueStyle)
                             .frame(height: 240)
                             .padding()
                         }
-                        
+
                     }
                     Spacer()
                 }
                 .onAppear(perform: {covidData.loadData()})
         }
-                
-                
+
             }
 }
-
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {

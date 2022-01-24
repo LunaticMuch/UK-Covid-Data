@@ -17,7 +17,7 @@ struct InfoView: View {
             Text("UK Covid Data")
                 .font(.system(size: 28, weight: .bold))
             VStack(spacing: 20) {
-                
+
                 Text("UK Covid Data is a free application that allows you to see UK Government official statistics on your phone. This application has been created a learning project on how to build iOS apps. If you wish to get in touch, report a bug, or request an additional feature, please use on the social link at the bottom.")
             }
             .padding()
@@ -34,14 +34,14 @@ struct InfoView: View {
                             .foregroundColor(Color(UIColor.systemGray5)))
          Spacer()
             Divider()
-            HStack{
+            HStack {
                 Link(destination: instagramURL, label: {
-                    Image("instagram").padding()} )
+                    Image("instagram").padding()})
                 Link(destination: linkedinURL, label: {
-                    Image("linkedin").padding()} )
+                    Image("linkedin").padding()})
                 Link(destination: githubURL, label: {
-                    Image("github").padding()} )
-             
+                    Image("github").padding()})
+
             }
             .padding(.bottom, 30)
         }.padding()
