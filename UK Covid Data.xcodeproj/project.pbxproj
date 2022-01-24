@@ -32,6 +32,7 @@
 		7B14C026278B601E009D567D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7B2DF7BA279474EF00F89F20 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		7BE7B606279DBC7D00F66872 /* Extension+Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Numeric.swift"; sourceTree = "<group>"; };
+		7BE7B60B279E047700F66872 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7BFB1518279C513D00A557C4 /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChartView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +51,7 @@
 		7B14C004278B5762009D567D = {
 			isa = PBXGroup;
 			children = (
+				7BE7B60B279E047700F66872 /* README.md */,
 				7BFB1517279C513D00A557C4 /* Packages */,
 				7B14C00F278B5762009D567D /* UK Covid Data */,
 				7B14C00E278B5762009D567D /* Products */,
