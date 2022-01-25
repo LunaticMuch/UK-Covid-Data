@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct UK_Covid_DataApp: App {
+struct UKCovidDataApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
