@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B14C00D278B5762009D567D /* UK Covid Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UK Covid Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B14C00D278B5762009D567D /* UKCovidDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UKCovidDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B14C010278B5762009D567D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		7B14C012278B5762009D567D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		7B14C014278B5764009D567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			children = (
 				7BE7B60B279E047700F66872 /* README.md */,
 				7BFB1517279C513D00A557C4 /* Packages */,
-				7B14C00F278B5762009D567D /* UK Covid Data */,
+				7B14C00F278B5762009D567D /* UKCovidDashboard */,
 				7B14C00E278B5762009D567D /* Products */,
 				7B24D266279A0C25007308FD /* Frameworks */,
 			);
@@ -62,12 +62,12 @@
 		7B14C00E278B5762009D567D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B14C00D278B5762009D567D /* UK Covid Data.app */,
+				7B14C00D278B5762009D567D /* UKCovidDashboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B14C00F278B5762009D567D /* UK Covid Data */ = {
+		7B14C00F278B5762009D567D /* UKCovidDashboard */ = {
 			isa = PBXGroup;
 			children = (
 				7B2DF7C027948E4E00F89F20 /* Controllers */,
@@ -78,7 +78,7 @@
 				7B14C014278B5764009D567D /* Assets.xcassets */,
 				7B14C016278B5764009D567D /* Preview Content */,
 			);
-			path = "UK Covid Data";
+			path = UKCovidDashboard;
 			sourceTree = "<group>";
 		};
 		7B14C016278B5764009D567D /* Preview Content */ = {
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B14C00C278B5762009D567D /* UK Covid Data */ = {
+		7B14C00C278B5762009D567D /* UKCovidDashboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B14C01B278B5764009D567D /* Build configuration list for PBXNativeTarget "UK Covid Data" */;
+			buildConfigurationList = 7B14C01B278B5764009D567D /* Build configuration list for PBXNativeTarget "UKCovidDashboard" */;
 			buildPhases = (
 				7BE7B60A279E031D00F66872 /* Run Swiftlint */,
 				7B14C009278B5762009D567D /* Sources */,
@@ -163,12 +163,12 @@
 			);
 			dependencies = (
 			);
-			name = "UK Covid Data";
+			name = UKCovidDashboard;
 			packageProductDependencies = (
 				7BE7B602279C527500F66872 /* SwiftUICharts */,
 			);
 			productName = "UK Covid Data";
-			productReference = 7B14C00D278B5762009D567D /* UK Covid Data.app */;
+			productReference = 7B14C00D278B5762009D567D /* UKCovidDashboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B14C008278B5762009D567D /* Build configuration list for PBXProject "UK Covid Data" */;
+			buildConfigurationList = 7B14C008278B5762009D567D /* Build configuration list for PBXProject "UKCovidDashboard" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B14C00C278B5762009D567D /* UK Covid Data */,
+				7B14C00C278B5762009D567D /* UKCovidDashboard */,
 			);
 		};
 /* End PBXProject section */
@@ -439,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B14C008278B5762009D567D /* Build configuration list for PBXProject "UK Covid Data" */ = {
+		7B14C008278B5762009D567D /* Build configuration list for PBXProject "UKCovidDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B14C019278B5764009D567D /* Debug */,
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B14C01B278B5764009D567D /* Build configuration list for PBXNativeTarget "UK Covid Data" */ = {
+		7B14C01B278B5764009D567D /* Build configuration list for PBXNativeTarget "UKCovidDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B14C01C278B5764009D567D /* Debug */,
